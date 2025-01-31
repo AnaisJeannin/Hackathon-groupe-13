@@ -18,7 +18,7 @@ def configurations_atteignables(probleme):
     configurations_atteignables.add(probleme_t)
 
     arretes = {} # dictionnaire avec configuration possible en clé et en valeurs la liste des configurations auxquelles elle est reliée par un mouvement élémentaire
-
+    arretes[probleme_t] = []
 
     voisins = [probleme] #on y met les configuartions atteignables que l'on n'a pas encore visité
     heapq.heapify(voisins) # on initialise la pile
@@ -28,7 +28,6 @@ def configurations_atteignables(probleme):
         config = heapq.heappop(voisins) 
         position , indice = position_0(config)
         config_t = tuple(config)  # on a besoin d'un type hashable
-        arretes[config_t] = []
         for k in mouvements_possibles :
             nouvelle_position = position + k
             i , j = position[0] , position[1] 
@@ -45,7 +44,8 @@ def configurations_atteignables(probleme):
                     configurations_atteignables.add(nouv_config_t)
                     heapq.heappush(voisins, nouv_config)
                     arretes[config_t].append(nouv_config_t)
+                    arretes[nouv_config_t] = [config_t]
     
     return configurations_atteignables , arretes
 
-# print(configurations_atteignables([8,9,7,5,0,1,3,2,4])) test
+print(configurations_atteignables([8,9,7,5,0,1,3,2,4])) 
