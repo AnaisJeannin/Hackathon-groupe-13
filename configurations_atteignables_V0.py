@@ -1,4 +1,4 @@
-+import numpy as np
+import numpy as np
 
 probleme = np.array([[8,6,7],[5,0,1],[3,2,4]])
 
