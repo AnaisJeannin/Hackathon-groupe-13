@@ -18,7 +18,7 @@ Le fichier Dijkstra comporte l'algorithme Dijkstra qui correspond à la recherch
 
 Le fichier interface_graphique.py permet de faire l'interface graphique. (il n'affiche que la configuration que l'on souhaite atteindre)
 
-Enfin, le fichier Le_tout.ipynb regroupe tous les fichiers (sauf celui de l'interface graphique) pour résoudre le problème.
+Enfin, le fichier Le_tout.ipynb regroupe tous les fichiers (sauf celui de l'interface graphique) pour résoudre le problème. On sait que le résultat n'est pas optimal.
 
 
 
