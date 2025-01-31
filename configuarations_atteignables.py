@@ -37,4 +37,4 @@ for config in voisins :
                 arretes[config].append(nouv_config)
 
     voisins.pop(0)
-    
+
