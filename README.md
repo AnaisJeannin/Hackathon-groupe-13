@@ -16,7 +16,9 @@ Les versions V0 et V1 ont à peu près le même fonctionnement mais la 'pile' ut
 
 Le fichier Dijkstra comporte l'algorithme Dijkstra qui correspond à la recherche d'un chemin possible entre la configuration initiale (123456780) et la configuration finale (qui correspond en fait à la manière dont le jeu a été initialisé). Il permet aussi d'afficher les coups successifs (ou le fait qu'il n'a pas trouvé de solution).
 
-Enfin, le fichier interface_graphique.py permet de faire l'interface graphique. (il n'affiche que la configuration que l'on souhaite atteindre)
+Le fichier interface_graphique.py permet de faire l'interface graphique. (il n'affiche que la configuration que l'on souhaite atteindre)
+
+Enfin, le fichier Le_tout.ipynb regroupe tous les fichiers (sauf celui de l'interface graphique) pour résoudre le problème.
 
 
 
