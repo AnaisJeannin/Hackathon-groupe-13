@@ -25,29 +25,10 @@ for config in voisins :
         i , j = position[0] , position[1] 
         i_nouv , j_nouv = nouvelle_position[0], nouvelle_position[1] 
         if (i_nouv <= 2 ) and (j_nouv <= 2 ) and (i_nouv >= 0 ) and (j_nouv >= 0) :
-            nouv_config = probleme.copy
+            nouv_config = probleme.copy()
             nouv_config[i_nouv][j_nouv] , nouv_config[i][j] = probleme[i][j] , probleme[i_nouv][j_nouv]
             if nouv_config not in configurations_atteignables :
                 configurations_atteignables.append(nouv_config)
                 voisins.append(nouv_config)
                 arrete[config].append(nouv_config)
     voisins.pop(0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-# garder en mémoire les coups joués
-
-# mettre à jour le problème
-
-
-
