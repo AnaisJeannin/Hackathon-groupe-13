@@ -48,4 +48,4 @@ def configurations_atteignables(probleme):
     
     return configurations_atteignables , arretes
 
-#print(configurations_atteignables([8,9,7,5,0,1,3,2,4])) test
+# print(configurations_atteignables([8,9,7,5,0,1,3,2,4])) test
